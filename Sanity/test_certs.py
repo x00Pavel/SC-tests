@@ -2,10 +2,10 @@
 from os import remove
 from subprocess import run
 
-from SCAutolib.src import utils
-from SCAutolib.src.env import run
+from SCAutolib import utils
+from SCAutolib.env import run
 from fixtures import *
-from SCAutolib.src.exceptions import PatternNotFound
+from SCAutolib.exceptions import PatternNotFound
 
 
 @pytest.mark.parametrize("file_path,restore,restart",

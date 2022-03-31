@@ -1,9 +1,9 @@
 import sys
 import pexpect
 import pytest
-from SCAutolib.src.authselect import Authselect
-from SCAutolib.src.utils import run_cmd
-from SCAutolib.src.virt_card import VirtCard
+from SCAutolib.authselect import Authselect
+from SCAutolib.utils import run_cmd
+from SCAutolib.virt_card import VirtCard
 from fixtures import user_shell, ipa_user, LocalUser
 from os.path import isfile
 

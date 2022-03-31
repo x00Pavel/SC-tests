@@ -1,6 +1,6 @@
 import pytest
-from SCAutolib.src.authselect import Authselect
-from SCAutolib.src.virt_card import VirtCard
+from SCAutolib.authselect import Authselect
+from SCAutolib.virt_card import VirtCard
 from fixtures import user_indirect, user_shell
 
 

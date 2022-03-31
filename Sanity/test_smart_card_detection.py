@@ -1,7 +1,7 @@
 import pytest
 
 from fixtures import user_indirect, root_shell, edit_config
-from SCAutolib.src import virt_card, utils
+from SCAutolib import virt_card, utils
 
 
 def test_modutil_token_info(user, root_shell):

@@ -8,11 +8,11 @@ from time import sleep
 import pexpect
 import pytest
 import python_freeipa as pipa
-from SCAutolib.src import read_config, LIB_CERTS, LIB_KEYS
-from SCAutolib.src.authselect import Authselect
-from SCAutolib.src.utils import (run_cmd, check_output, edit_config_,
+from SCAutolib import read_config, LIB_CERTS, LIB_KEYS
+from SCAutolib.authselect import Authselect
+from SCAutolib.utils import (run_cmd, check_output, edit_config_,
                                  restart_service, backup_, restore_file_)
-from SCAutolib.src.virt_card import VirtCard
+from SCAutolib.virt_card import VirtCard
 import python_freeipa as pipa
 
 

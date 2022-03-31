@@ -5,7 +5,7 @@ from time import sleep
 import pytest
 from fixtures import ipa_user, https_server, root_shell, ipa_meta_client
 from subprocess import check_output
-from SCAutolib.src import virt_card
+from SCAutolib import virt_card
 
 
 @pytest.mark.parametrize('principal,ca', [("https-server", "ipa")])

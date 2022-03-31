@@ -1,8 +1,8 @@
 # author: Pavel Yadlouski <pyadlous@redhat.com>
 from fixtures import *
-from SCAutolib.src.exceptions import PatternNotFound
-from SCAutolib.src.utils import (edit_config_, backup_)
-from SCAutolib.src import env_logger
+from SCAutolib.exceptions import PatternNotFound
+from SCAutolib.utils import (edit_config_, backup_)
+from SCAutolib import logger
 import pytest
 
 
@@ -50,8 +50,8 @@ def test_matchrule_defined_for_other_user(user, edit_config):
     with open("/etc/sssd/sssd.conf", "w") as sources:
         sources.write(sourcesdata)
     # print sssd.conf; restart service
-    env_logger.warning("Custom changes were made in sssd.conf file:")
-    env_logger.info(sourcesdata)
+    logger.warning("Custom changes were made in sssd.conf file:")
+    logger.info(sourcesdata)
     restart_service("sssd")
     # run tests
     with pytest.raises(PatternNotFound):
